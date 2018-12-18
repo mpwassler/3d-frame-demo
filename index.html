@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3D</title>
+</head>
+<style>
+	canvas {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	.controls {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+		/* background-color: #000; */		
+		width: 300px;
+		height: 50px;
+	}
+	.frame-controls a
+	,.controls a {
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		display: inline-block;
+	}
+	.frame-controls a.blue,
+	.controls a.blue {
+		background-color: blue;
+	}
+	.frame-controls a.black,
+	.controls a.black {
+		background-color: #000;
+	} 
+	
+	.frame-controls a.red,
+	.controls a.red {
+		background-color: #F02E2E
+	}
+
+	.frame-controls {
+		position: absolute;
+		bottom: 90px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+		/* background-color: #000; */		
+		width: 300px;
+		height: 50px;
+	}
+</style>
+<body>
+
+<canvas id="scene" ></canvas>
+<div class="controls">
+	<a href="#" class="black"></a>
+	<a href="#" class="blue"></a>
+	<a href="#" class="red"></a>
+</div>
+<div class="frame-controls">
+	<a href="#" class="black"></a>
+	<a href="#" class="blue"></a>
+	
+</div>
+<script src="libs/babylon/babylon.2.4.js" ></script>
+<script src="libs/gsap/TweenMax.js" ></script>
+<script src="libs/babylon/babylon.objFileLoader.js" ></script>
+
+<script src="js/main.js" ></script>
+</body>
+</html>
